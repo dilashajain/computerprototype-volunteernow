@@ -1,20 +1,21 @@
 <html>
 <head>
+<meta charset="utf-8"/>
 </head>
 <body>
 
-	<style>
-body 
 
+  <style>
+body 
 {
 margin: 0;
 box-sizing: border-box;}
 
 .navbar
     {
+      
       height: 100%;
       width: 100%;
-      background: white; 
       margin: 0px;
       text-align: center;
       box-sizing: border-box;
@@ -28,12 +29,13 @@ box-sizing: border-box;}
       ul.navbar li a
       {
         text-decoration: none;
-        width: 150px;
+        width: 250px;
         display: inline-block;
         text-align: center;
         padding: 20px 0;
         position: relative;
-        color: #333;
+        color: #473C8B;
+        border-bottom: 1px solid #473C8B;
 
       }
       ul.navbar li a::before {
@@ -46,14 +48,15 @@ box-sizing: border-box;}
     width: 0%;
     transition: 0.5s;
 }
+
   ul.navbar li a:hover::before
   {
     width: 100%;
   }
 
     .search{
-    	width:541px;
-    	height:50px; 
+      width:580px;
+      height:50px; 
 
 
     }
@@ -96,7 +99,7 @@ input
 
 .button{
     background: #473C8B; 
-    width:120px; 
+    width:130px; 
     height: 30px;
     padding:10px; 
     color:white; 
@@ -141,7 +144,7 @@ input
 .content
 {
 
-    background-color: blue;
+    
     width: 100%;
     height: auto;
 }
@@ -187,13 +190,6 @@ a
 }
 
 
-.wrapper1
-{
-    width: 100%;
-    height: 500px;
-    float: left;
-      
-}
 
 .box
 {
@@ -239,10 +235,25 @@ a
 .front
 {
   height: 10%;
+  width: 100%;
   text-align: center;
   line-height: 45px;
   color: #333;
+  background-color: white;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
 }
+
+.front1
+{
+  height: 10%;
+  text-align: center;
+  line-height: 45px;
+  background: linear-gradient(to right, #ff6410, #ff357c);
+  color: white;
+}
+
 
 .inside1
 {
@@ -261,7 +272,7 @@ a
 }
 body {
   font-family: 'Lato', Arial, sans-serif;
-  background: #2196f3;
+  
   color: #333;
   font-size: 16px;
   letter-spacing: 1px;
@@ -273,6 +284,10 @@ body {
   color: white;
 }
 
+#navbar li a.active{
+   border-bottom: 4px solid #473C8B;
+   
+}
 
 
 </style>
@@ -282,193 +297,45 @@ body {
 <div class="photodisp">
   <div class="search">
         <input type="text" id="topics" style="float:left"/>
-    <div class="button" style="float:left"><span>Get Started</span></div>
+    <div class="button" style="float:left" id="button"><span>Get Started</span></div>
   </div>
   </div>
 </div>
 
 <div class="header">
 
-  <div class="logo" style="position: absolute; z-index: 1; left: 120px; top: 110px; font-size: 50px; color: white; font-weight: 100; letter-spacing: 2px;"><a href="index.html">
-    VOLUNTEER_noW</a>
+  <div class="logo" style="position: absolute; z-index: 1; left: 120px; top: 110px; font-size: 55px; color: white; font-weight: 100; letter-spacing: 2px;"><a href="index.html">
+    Volunteer Now</a>
   </div>
 
 </div>
 
-  <div class="nav" style="height: 70px;">
-     <ul class="navbar">
-       <li><a class="active" href="">Opportunities</a></li>
-       <li><a href="Saved.html">Saved</a></li>
-       </ul>
+
+  <div class="nav" style="height: 70px; margin-top: 5px;">
+     <ul class="navbar" id="navbar" style=" background-color: transparent;">
+      <form action="Saved.html" method="Get">
+       <li><a class="active" href="#"> Opportunities </a></li>
+       <li><a id="mybtn"> Saved </a></li>
+     </form>
+       </ul> 
   </div>
 <div class="content">
 
  <div class="contentcol1">
-     <ul class="col1">
-       
-       <li><a class="card" href="interest1.html">
-       <div class="wrapper1">
-
-         <div class="box"> 
-           
-        <div class="part1">Art and Design</div>
-        <div class="part2"> <p style="font-size: 18px;">Washington Square Park Conservancy Greeter-Guide</p>
-
-          Skills Required <br>
-                    
-    History
-    People Skills
-    Storytelling
-    Gardening
-    Community Outreach
-
-
-
-</div>
-        <div class="part3"><div class="inside1">Apr 10<br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;">
-          <img src="dest.png" width="22px" height="25px">
-          </div>Pier 84 | Hudson River ParkNew York, NY  10036 </div></div>
-
-          <div class="container">
-  <div class="front">SAVE</div>
-</div>
-</div>
-
-</div>
-
-
-       </a></li>
-       <li><a class="card" href="box3">
-          <div class="box"> <!-- Changes made here -->
-           
-        <div class="part1">Art and Design</div>
-        <div class="part2"><p style="font-size: 18px;">    
-VOLUNTEERS! Welcome to Savannah Cakes 4 Kids! 'Bake' a Difference Today</p>
-
-          Skills Required <br>
-                    
-   Baking</div>
-        <div class="part3"><div class="inside1">Apr 17
-
-          <br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;"><img src="dest.png" width="22px" height="25px"></div>137 East 2nd Street 2nd FloorNew York, NY  10009</div></div>
-
-         <div class="container">
-  <div class="front">SAVE</div>
-</div>
-
-    </div>
-    </a></li>
-       <li><a class="card" href="box4">
- <div class="box"> <!-- Changes made here -->
-           
-        <div class="part1">Children and Youth</div>
-        <div class="part2"> <p style="font-size: 18px;">Change a Life. Change Your Life. Become a Mentor!</p>
-
-          Skills Required <br>
-                    
-    People Skills
-    Mentoring
-    Relationship Building
-    Verbal / Written Communication
-    Spanish
-    Youth Services
-</div>
-        <div class="part3"><div class="inside1">Apr 21<br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;">
-          <img src="dest.png" width="22px" height="25px">
-          </div>365 Summit AveJersey City, NJ  07306</div></div>
-             <div class="container">
-  <div class="front">SAVE</div>
-</div>
-    </div>
-       </a></li>
-       <li><a  class="card" href="box1">  <div class="box"> <!-- Changes made here -->
-           
-        <div class="part1">Children and Youth</div>
-        <div class="part2"> <p style="font-size: 18px;">Change a Life. Change Your Life. Become a Mentor!</p>
-
-          Skills Required <br>
-                    
-    People Skills
-    Mentoring
-    Relationship Building
-    Verbal / Written Communication
-    Spanish
-    Youth Services
-</div>
-        <div class="part3"><div class="inside1">Apr 21<br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;">
-          <img src="dest.png" width="22px" height="25px">
-          </div>365 Summit AveJersey City, NJ  07306</div></div>
-       <div class="container">
-  <div class="front">SAVE</div>
-</div>
-
-    </div></a></li>
-
-
-
-       <li> <a class="card" href="box2"> <div class="box"> <div class="part1">Animals</div>
-        <div class="part2">
-
-
-          <p style="font-size: 18px;">Cat Care Volunteer</p>
-
-          Skills Required <br>
-                    Animal Care / Handling
-        </div>
-        <div class="part3"><div class="inside1">May 1<br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;">
-          <img src="dest.png" width="22px" height="25px">
-          </div>365 Summit AveJersey City, NJ  07306</div>
-        </div>
-
-           <div class="container">
-  <div class="front">SAVE</div>
-</div>
-    </div></a></li>
-
-
-       <li><a class="card" href="box3">  <div class="box"> <!-- Changes made here -->
-           
-        <div class="part1">Art and Design</div>
-        <div class="part2"> <p style="font-size: 18px;">Sort medical supplies! Help the environment and save lives!
-        </p>
-
-          Skills Required <br>
-                    Animal Care / Handling</div>
-        <div class="part3"><div class="inside1">May 7<br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px; height: 100%;">
-          <img src="dest.png" width="22px" height="25px">
-          </div>South Street Seaport Fulton and South StreetNew York, NY  10038</div></div>
-
-             <div class="container">
-  <div class="front">SAVE</div>
-</div>
-    </div></a></li>
-    
-      
-       
-   </ul>
+     <ul class="col1" id="col1"></ul>
  </div>
 
  </div>
-
-
-</div>
 
 
 <div class="footer">
 
 </div>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="interest.js">
+</script>
+
 
 </body>
 </html>

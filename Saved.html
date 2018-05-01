@@ -19,8 +19,6 @@ body {margin: 0; box-sizing: border-box;
       text-align: center;
       box-sizing: border-box;
       font-size: 20px;
-
-
     }
   
       ul.navbar li
@@ -31,12 +29,13 @@ body {margin: 0; box-sizing: border-box;
       ul.navbar li a
       {
         text-decoration: none;
-        width: 150px;
+        width: 250px;
         display: inline-block;
         text-align: center;
         padding: 20px 0;
         position: relative;
         color: #333;
+        border-bottom: 1px solid #473C8B;
 
       }
       ul.navbar li a::before {
@@ -142,7 +141,7 @@ input
 
 .content
 {
-    background-color: blue;
+    
     width: 100%;
     height: auto;
 }
@@ -159,7 +158,7 @@ a
     position: relative;
 }
 
-ul.col1
+ul.col2
 {
     list-style-type: none;
     margin: 0;
@@ -174,7 +173,7 @@ ul.col1
    
 }
 
-ul.col1 li a
+ul.col2 li a
 {
     width: 730px;
     height: 500px;
@@ -187,21 +186,15 @@ ul.col1 li a
 
 }
 
-.wrapper1
-{
-    width: 100%;
-    height: 500px;
-    float: left;
 
-      
-}
 
 .box
 {
-    width: 100%;
+    width: 60%;
     height: 500px;
     box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 10px 0 rgba(0, 0, 0, 0.1); 
     display: inline-block;float: left;
+    margin-bottom: 40px;
 
 }
 
@@ -246,6 +239,7 @@ ul.col1 li a
   text-align: center;
   line-height: 50px;
   color: #333;
+
 }
 .maptile
 {
@@ -274,7 +268,7 @@ ul.col1 li a
 }
 body {
   font-family: 'Lato', Arial, sans-serif;
-  background: #2196f3;
+  
   color: #333;
   font-size: 16px;
   letter-spacing: 1px;
@@ -286,6 +280,11 @@ body {
   color: white;
 }
 
+#navbar li a.active{
+
+   border-bottom: 4px solid #473C8B;
+   
+}
 
 </style>
 
@@ -302,14 +301,19 @@ body {
 
   <div class="logo" style="position: absolute; z-index: 1; left: 120px; top: 110px; font-size: 50px; color: white; font-weight: 100; letter-spacing: 2px;">
     <a href="index.html">
-    VOLUNTEER_noW</a>
+    Volunteer Now</a>
   </div>
 </div>
   
         <div class="nav" style="height: 70px;">
-       <ul class="navbar">
-       <li><a href="interest.html">Opportunities</a></li>
-       <li><a class="active" href="#saved">Saved</a></li>
+       <ul class="navbar" id="navbar">
+
+       <form action="interest.html" method="Get">
+       <li><a>Opportunities</a></li>
+       <li><a class="active" id="mybtn">Saved</a></li>
+       </form>
+
+      
 </ul>
 
 </div>
@@ -320,69 +324,7 @@ body {
 
 
  <div class="contentcol1">
-     <ul class="col1">
-       
-       <li><a href="box2">
-       <div class="wrapper1">
-
-         <div class="box"> <!-- Changes made here -->
-           
-        <div class="part1">Art and Design</div>
-        <div class="part2"> <p style="font-size: 18px;">Washington Square Park Conservancy Greeter-Guide</p>
-
-          Skills Required <br>
-                    
-    History
-    People Skills
-    Storytelling
-    Gardening
-    Community Outreach
-
-</div>
-        <div class="part3"><div class="inside1">Apr 10<br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;">
-          <img src="dest.png" width="22px" height="25px">
-          </div>Pier 84 | Hudson Rive
-        r ParkNew York, NY  10036 </div></div>
-
-                         <div class="container">
-  <div class="front">REMOVE</div>
-</div>
-    </div>
-</div>
-
-
-       </a></li>
-       <li><a href="box3">
-
-        <div class="wrapper1">
-
-         <div class="box"> <!-- Changes made here -->
-           
-        <div class="part1">Art and Design</div>
-        <div class="part2"><p style="font-size: 18px;">    
-VOLUNTEERS! Welcome to Savannah’s Cakes 4 Kids! 'Bake' a Difference Today</p>
-
-          Skills Required <br>
-                    
-   Baking</div>
-        <div class="part3"><div class="inside1">Apr 17
-
-          <br> 2018</div><div class="inside2">
-
-          <div class="dest" style="float: left; padding: 1px;"><img src="dest.png" width="22px" height="25px"></div>137 East 2nd Street 2nd FloorNew York, NY  10009</div></div>
-
-    <div class="container">
-  <div class="front">REMOVE</div>
-</div>
-
-    </div>
-</div>
-    
-       </a></li>
-       
-      
+     <ul class="col2" id="col2">
       
       
         <div class="sidebar" style="position: fixed; z-index: 1; top: 415px;left: 900px;">
@@ -391,14 +333,22 @@ VOLUNTEERS! Welcome to Savannah’s Cakes 4 Kids! 'Bake' a Difference Today</p>
         
    </ul>
   
+     
+ </div>
     
  </div>
 
 
- </div>
+
 
 
 
 <div class="footer"></div>
+
+ <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="Saved.js">
+</script>
+
 </body>
 </html>
